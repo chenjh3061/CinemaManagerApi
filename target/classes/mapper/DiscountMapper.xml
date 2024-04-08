@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.rabbiter.cm.mapper.DiscountMapper">
+
+    <resultMap id="discountMapper" type="com.rabbiter.cm.domain.Discount">
+        <id property="disId" column="dis_id"></id>
+        <result property="disName" column="dis_name"></result>
+        <result property="disOff" column="dis_off"></result>
+    </resultMap>
+
+    <insert id="insert">
+        insert into discount(dis_id, dis_name, dis_off, dis_state) VALUES
+        (<if test="disId != null ">dis_id = #{disId}, </if>
+        <if test="disName != null " >dis_name = #{disName}, </if>
+        <if test="disOff != null ">dis_off = #{disOff}, </if>
+        <if test="disState != null">dis_state = #{disState} </if>)
+    </insert>
+
+    <update id="update" parameterType="com.rabbiter.cm.domain.Discount">
+        update discount set
+        <if test="disId != null ">dis_id = #{disId}, </if>
+        <if test="disName != null " >dis_name = #{disName}, </if>
+        <if test="disOff != null ">dis_off = #{disOff}, </if>
+        <if test="disState != null">dis_state = #{disState} </if>
+        where dis_id = #{disId}
+    </update>
+
+    <delete id="delete">
+        delete from discount
+        where dis_id = #{id}
+    </delete>
+
+    <select id="queryById" resultType="com.rabbiter.cm.domain.Discount">
+        select * from discount where dis_id = #{id}
+    </select>
+
+    <select id="findAllDiscount" resultType="com.rabbiter.cm.domain.Discount">
+        select * from discount
+        <where>
+            <if test="disId != null and disId != ''">
+                and dis_id like concat('%', #{disId}, '%')
+            </if>
+            <if test="disName != null and disName != ''">
+                and dis_name like concat('%', #{disName}, '%')
+            </if>
+            <if test="disOff != null and disOff != ''">
+                and dis_off like concat('%', #{disOff}, '%')
+            </if>
+            <if test="disState != null and disState != ''">
+                and dis_state like concat('%', #{disState}, '%')
+            </if>
+        </where>
+    </select>
+
+
+</mapper>

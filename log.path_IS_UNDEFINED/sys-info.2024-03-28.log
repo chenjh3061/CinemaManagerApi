@@ -1,0 +1,179 @@
+14:32:56.571 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+14:32:56.599 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStarting,55] - Starting CinemaManagerApplication using Java 1.8.0_312 on LAPTOP-95OATB1R with PID 31300 (D:\HuaweiMoveData\Users\chen'j'h\Desktop\CinemaManager\CinemaManagerApi - idea\target\classes started by chen'j'h in D:\HuaweiMoveData\Users\chen'j'h\Desktop\CinemaManager\CinemaManagerApi - idea)
+14:32:56.601 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStartupProfileInfo,660] - No active profile set, falling back to default profiles: default
+14:32:59.762 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9231"]
+14:32:59.763 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+14:32:59.764 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+14:32:59.873 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+14:33:00.244 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+14:33:01.420 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+14:33:01.433 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+14:33:01.434 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+14:33:01.435 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+14:33:01.436 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+14:33:01.436 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+14:33:01.437 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+14:33:01.437 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6813e120
+14:33:01.537 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9231"]
+14:33:01.566 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+14:33:01.581 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStarted,61] - Started CinemaManagerApplication in 5.755 seconds (JVM running for 7.93)
+14:33:12.734 [http-nio-9231-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+14:37:27.370 [http-nio-9231-exec-3] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:37:29.471 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:42:51.591 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:42:55.371 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:42:58.989 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:05.269 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:05.279 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:11.818 [http-nio-9231-exec-9] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:14.353 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:16.895 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:17.382 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:19.529 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:21.560 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:21.564 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:43:24.663 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:44:14.377 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:44:14.388 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:44:17.333 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:45:11.598 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:45:12.691 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:45:12.695 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:47:10.487 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:47:41.076 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:47:49.382 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:47:56.813 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:07.334 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:12.371 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:12.435 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:16.741 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:31.663 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:31.673 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:35.104 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:43.664 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:43.713 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:43.822 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:43.866 [http-nio-9231-exec-3] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:48:50.314 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:52:32.523 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:52:32.741 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:52:33.541 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:52:34.638 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:52:51.277 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:53:01.275 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:53:06.381 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:53:08.000 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:53:16.331 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:53:17.237 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:53:20.186 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:54:07.077 [http-nio-9231-exec-3] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:54:07.077 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:54:58.125 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:02.107 [http-nio-9231-exec-9] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:05.130 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:16.815 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:26.414 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:33.924 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:35.287 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:35.289 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:37.230 [http-nio-9231-exec-9] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:55:40.607 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:56:57.702 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:56:58.977 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:56:59.066 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:57:07.389 [http-nio-9231-exec-3] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:57:07.556 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:57:08.535 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:57:14.555 [http-nio-9231-exec-9] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+14:57:14.606 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:01:28.333 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:01:35.096 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:01:35.137 [http-nio-9231-exec-9] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:01:42.656 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:01:44.144 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:04:49.650 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:04:49.660 [http-nio-9231-exec-5] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:04:50.314 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:09:34.872 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:09:38.486 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:09:56.091 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+15:09:58.603 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+18:37:40.752 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+18:37:41.132 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+18:37:41.132 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+18:37:41.133 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+18:37:41.147 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+18:37:41.152 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+18:37:46.980 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+18:37:47.000 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStarting,55] - Starting CinemaManagerApplication using Java 1.8.0_312 on LAPTOP-95OATB1R with PID 34764 (D:\HuaweiMoveData\Users\chen'j'h\Desktop\CinemaManager\CinemaManagerApi - idea\target\classes started by chen'j'h in D:\HuaweiMoveData\Users\chen'j'h\Desktop\CinemaManager\CinemaManagerApi - idea)
+18:37:47.003 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStartupProfileInfo,660] - No active profile set, falling back to default profiles: default
+18:37:48.824 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9231"]
+18:37:48.825 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+18:37:48.826 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+18:37:48.906 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+18:37:49.216 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+18:37:50.086 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+18:37:50.095 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+18:37:50.095 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+18:37:50.096 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+18:37:50.097 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+18:37:50.097 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+18:37:50.097 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+18:37:50.097 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5b90ea59
+18:37:50.178 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9231"]
+18:37:50.204 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+18:37:50.213 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStarted,61] - Started CinemaManagerApplication in 3.73 seconds (JVM running for 5.095)
+18:37:53.863 [http-nio-9231-exec-2] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+19:44:25.212 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+19:44:39.257 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+19:44:39.388 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+19:44:47.896 [http-nio-9231-exec-2] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+19:44:48.951 [http-nio-9231-exec-3] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+19:45:07.764 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+20:35:35.782 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20:35:36.047 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+20:35:36.047 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+20:35:36.048 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+20:35:36.054 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+20:35:36.064 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
+20:35:45.525 [background-preinit] INFO  o.h.v.i.util.Version - [<clinit>,21] - HV000001: Hibernate Validator 6.1.6.Final
+20:35:45.531 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStarting,55] - Starting CinemaManagerApplication using Java 1.8.0_312 on LAPTOP-95OATB1R with PID 15372 (D:\HuaweiMoveData\Users\chen'j'h\Desktop\CinemaManager\CinemaManagerApi - idea\target\classes started by chen'j'h in D:\HuaweiMoveData\Users\chen'j'h\Desktop\CinemaManager\CinemaManagerApi - idea)
+20:35:45.532 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStartupProfileInfo,660] - No active profile set, falling back to default profiles: default
+20:35:47.713 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Initializing ProtocolHandler ["http-nio-9231"]
+20:35:47.714 [restartedMain] INFO  o.a.c.c.StandardService - [log,173] - Starting service [Tomcat]
+20:35:47.714 [restartedMain] INFO  o.a.c.c.StandardEngine - [log,173] - Starting Servlet engine: [Apache Tomcat/9.0.39]
+20:35:47.787 [restartedMain] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring embedded WebApplicationContext
+20:35:48.117 [restartedMain] INFO  c.a.d.p.DruidDataSource - [init,985] - {dataSource-1} inited
+20:35:48.927 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1220] - Using default implementation for ThreadExecutor
+20:35:48.934 [restartedMain] INFO  o.q.c.SchedulerSignalerImpl - [<init>,61] - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+20:35:48.934 [restartedMain] INFO  o.q.c.QuartzScheduler - [<init>,229] - Quartz Scheduler v.2.3.2 created.
+20:35:48.935 [restartedMain] INFO  o.q.s.RAMJobStore - [initialize,155] - RAMJobStore initialized.
+20:35:48.936 [restartedMain] INFO  o.q.c.QuartzScheduler - [initialize,294] - Scheduler meta-data: Quartz Scheduler (v2.3.2) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+20:35:48.936 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1374] - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+20:35:48.936 [restartedMain] INFO  o.q.i.StdSchedulerFactory - [instantiate,1378] - Quartz scheduler version: 2.3.2
+20:35:48.936 [restartedMain] INFO  o.q.c.QuartzScheduler - [setJobFactory,2293] - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@4c1fc704
+20:35:49.014 [restartedMain] INFO  o.a.c.h.Http11NioProtocol - [log,173] - Starting ProtocolHandler ["http-nio-9231"]
+20:35:49.038 [restartedMain] INFO  o.q.c.QuartzScheduler - [start,547] - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+20:35:49.049 [restartedMain] INFO  c.r.c.CinemaManagerApplication - [logStarted,61] - Started CinemaManagerApplication in 4.007 seconds (JVM running for 5.981)
+20:35:54.158 [http-nio-9231-exec-1] INFO  o.a.c.c.C.[.[.[/] - [log,173] - Initializing Spring DispatcherServlet 'dispatcherServlet'

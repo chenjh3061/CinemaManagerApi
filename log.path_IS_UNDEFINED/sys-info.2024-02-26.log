@@ -1,0 +1,19 @@
+00:01:36.383 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:01:36.381 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:01:58.214 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:01:58.214 [http-nio-9231-exec-6] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:02:10.328 [http-nio-9231-exec-4] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:02:10.328 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:02:13.864 [http-nio-9231-exec-1] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:02:13.864 [http-nio-9231-exec-10] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:02:35.172 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:02:35.172 [http-nio-9231-exec-8] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:03:01.024 [http-nio-9231-exec-3] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:03:03.415 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:03:07.267 [http-nio-9231-exec-7] INFO  c.r.c.c.u.JwtUtil - [verify,39] - 登录验证成功!
+00:15:19.288 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+00:15:19.819 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,666] - Scheduler quartzScheduler_$_NON_CLUSTERED shutting down.
+00:15:19.819 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [standby,585] - Scheduler quartzScheduler_$_NON_CLUSTERED paused.
+00:15:19.819 [SpringContextShutdownHook] INFO  o.q.c.QuartzScheduler - [shutdown,740] - Scheduler quartzScheduler_$_NON_CLUSTERED shutdown complete.
+00:15:19.821 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2032] - {dataSource-1} closing ...
+00:15:19.875 [SpringContextShutdownHook] INFO  c.a.d.p.DruidDataSource - [close,2104] - {dataSource-1} closed
