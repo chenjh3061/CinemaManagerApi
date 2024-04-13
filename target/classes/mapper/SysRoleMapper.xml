@@ -2,29 +2,29 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.cm.mapper.SysRoleMapper">
+<mapper namespace="com.cinema.cm.mapper.SysRoleMapper">
 
-    <resultMap id="SysRoleMap" type="com.rabbiter.cm.domain.SysRole">
+    <resultMap id="SysRoleMap" type="com.cinema.cm.domain.SysRole">
         <id property="roleId" column="role_id"></id>
         <result property="roleName" column="role_name"></result>
         <result property="roleDesc" column="role_desc"></result>
-        <collection property="children" column="role_id" ofType="com.rabbiter.cm.domain.SysResource" select="com.rabbiter.cm.mapper.SysRoleMapper.findByRoleId">
+        <collection property="children" column="role_id" ofType="com.cinema.cm.domain.SysResource" select="com.cinema.cm.mapper.SysRoleMapper.findByRoleId">
         </collection>
     </resultMap>
 
-    <resultMap id="OneRoleMap" type="com.rabbiter.cm.domain.SysResource">
+    <resultMap id="OneRoleMap" type="com.cinema.cm.domain.SysResource">
         <id property="id" column="resource_id"></id>
         <result property="name" column="resource_name"></result>
         <result property="path" column="path"></result>
         <result property="level" column="level"></result>
         <result property="parentId" column="parent_id"></result>    <!-- 一级目录 -->
-        <collection property="children" column="resource_id" ofType="com.rabbiter.cm.domain.SysResource">
+        <collection property="children" column="resource_id" ofType="com.cinema.cm.domain.SysResource">
             <id property="id" column="sid"></id>
             <result property="name" column="sname"></result>
             <result property="path" column="spath"></result>
             <result property="level" column="slevel"></result>
             <result property="parentId" column="sparent_id"></result>    <!-- 二级目录 -->
-            <collection property="children" column="resource_id" ofType="com.rabbiter.cm.domain.SysResource">
+            <collection property="children" column="resource_id" ofType="com.cinema.cm.domain.SysResource">
                 <id property="id" column="gsid"></id>
                 <result property="name" column="gsname"></result>
                 <result property="path" column="gspath"></result>
@@ -49,15 +49,15 @@
                     where sr.level = 1) resources on srr.resource_id = resources.gsid where sysr.role_id = #{id}
     </select>
 
-    <select id="findRoleById" resultType="com.rabbiter.cm.domain.SysRole" parameterType="long">
+    <select id="findRoleById" resultType="com.cinema.cm.domain.SysRole" parameterType="long">
         select * from sys_role where role_id = #{id}
     </select>
 
-    <update id="addRole" parameterType="com.rabbiter.cm.domain.SysRole">
+    <update id="addRole" parameterType="com.cinema.cm.domain.SysRole">
         insert into sys_role(role_name, role_desc) values(#{roleName}, #{roleDesc})
     </update>
 
-    <update id="updateRole" parameterType="com.rabbiter.cm.domain.SysRole">
+    <update id="updateRole" parameterType="com.cinema.cm.domain.SysRole">
         update sys_role set role_name = #{roleName}, role_desc = #{roleDesc} where role_id = #{roleId}
     </update>
 

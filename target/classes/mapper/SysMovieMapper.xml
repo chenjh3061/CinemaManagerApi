@@ -2,14 +2,14 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.cm.mapper.SysMovieMapper">
+<mapper namespace="com.cinema.cm.mapper.SysMovieMapper">
 
-    <resultMap id="SysMovieResult" type="com.rabbiter.cm.domain.SysMovie">
+    <resultMap id="SysMovieResult" type="com.cinema.cm.domain.SysMovie">
         <id property="movieId" column="movie_id"></id>
-        <collection property="movieCategoryList" column="movie_id" select="com.rabbiter.cm.mapper.SysMovieCategoryMapper.findOneMovieCategorys"></collection>
+        <collection property="movieCategoryList" column="movie_id" select="com.cinema.cm.mapper.SysMovieCategoryMapper.findOneMovieCategorys"></collection>
     </resultMap>
 
-    <select id="findAllMovies" resultMap="SysMovieResult" parameterType="com.rabbiter.cm.domain.vo.SysMovieVo">
+    <select id="findAllMovies" resultMap="SysMovieResult" parameterType="com.cinema.cm.domain.vo.SysMovieVo">
         select sm.* from sys_movie sm
         <if test="movieCategoryId != null and movieCategoryId > 0">
             join sys_movie_to_category smtc on sm.movie_id = smtc.movie_id
@@ -39,11 +39,11 @@
     </select>
 
     <!--根据id查询单个电影信息，不需要相关的额外信息-->
-    <select id="findOneMovie" resultType="com.rabbiter.cm.domain.SysMovie" parameterType="long">
+    <select id="findOneMovie" resultType="com.cinema.cm.domain.SysMovie" parameterType="long">
         select * from sys_movie where movie_id = #{id}
     </select>
 
-    <update id="addMovie" parameterType="com.rabbiter.cm.domain.SysMovie">
+    <update id="addMovie" parameterType="com.cinema.cm.domain.SysMovie">
         insert into sys_movie(
             <if test=" movieName != null and movieName != ''">movie_name,</if>
             <if test=" movieLength != null and movieLength != 0">movie_length,</if>
@@ -63,7 +63,7 @@
         )
     </update>
 
-    <update id="updateMovie" parameterType="com.rabbiter.cm.domain.SysMovie">
+    <update id="updateMovie" parameterType="com.cinema.cm.domain.SysMovie">
         update sys_movie
         set
         <if test=" movieName != null and movieName != ''">movie_name = #{movieName},</if>

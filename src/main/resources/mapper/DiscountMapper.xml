@@ -2,9 +2,9 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.cm.mapper.DiscountMapper">
+<mapper namespace="com.cinema.cm.mapper.DiscountMapper">
 
-    <resultMap id="discountMapper" type="com.rabbiter.cm.domain.Discount">
+    <resultMap id="discountMapper" type="com.cinema.cm.domain.Discount">
         <id property="disId" column="dis_id"></id>
         <result property="disName" column="dis_name"></result>
         <result property="disOff" column="dis_off"></result>
@@ -18,7 +18,7 @@
         <if test="disState != null">dis_state = #{disState} </if>)
     </insert>
 
-    <update id="update" parameterType="com.rabbiter.cm.domain.Discount">
+    <update id="update" parameterType="com.cinema.cm.domain.Discount">
         update discount set
         <if test="disId != null ">dis_id = #{disId}, </if>
         <if test="disName != null " >dis_name = #{disName}, </if>
@@ -32,11 +32,11 @@
         where dis_id = #{id}
     </delete>
 
-    <select id="queryById" resultType="com.rabbiter.cm.domain.Discount">
+    <select id="queryById" resultType="com.cinema.cm.domain.Discount">
         select * from discount where dis_id = #{id}
     </select>
 
-    <select id="findAllDiscount" resultType="com.rabbiter.cm.domain.Discount">
+    <select id="findAllDiscount" resultType="com.cinema.cm.domain.Discount">
         select * from discount
         <where>
             <if test="disId != null and disId != ''">

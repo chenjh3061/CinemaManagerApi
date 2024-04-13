@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.cm.mapper.SysCinemaMapper">
+<mapper namespace="com.cinema.cm.mapper.SysCinemaMapper">
 
     <!-- 查询影院信息，包含影院上映的所有电影信息 -->
-    <resultMap id="SysCinemaMap" type="com.rabbiter.cm.domain.SysCinema">
+    <resultMap id="SysCinemaMap" type="com.cinema.cm.domain.SysCinema">
         <id property="cinemaId" column="cinema_id"></id>
         <result property="cinemaName" column="cinema_name"></result>
         <result property="hallCategoryList" column="hall_category_list"></result>
@@ -14,14 +14,14 @@
         <result property="cinemaPhone" column="cinema_phone"></result>
         <result property="workStartTime" column="work_start_time"></result>
         <result property="workEndTime" column="work_end_time"></result>
-        <collection property="sysMovieList" ofType="SysMovie" column="cinema_id" select="com.rabbiter.cm.mapper.SysMovieMapper.findMovieByCinemaId"></collection>
+        <collection property="sysMovieList" ofType="SysMovie" column="cinema_id" select="com.cinema.cm.mapper.SysMovieMapper.findMovieByCinemaId"></collection>
     </resultMap>
 
-    <select id="findCinema" parameterType="Long" resultType="com.rabbiter.cm.domain.SysCinema">
+    <select id="findCinema" parameterType="Long" resultType="com.cinema.cm.domain.SysCinema">
         select * from sys_cinema
     </select>
 
-    <update id="updateCinema" parameterType="com.rabbiter.cm.domain.SysCinema">
+    <update id="updateCinema" parameterType="com.cinema.cm.domain.SysCinema">
         update sys_cinema set
         cinema_name = #{cinemaName}, cinema_picture = #{cinemaPicture},
         cinema_address = #{cinemaAddress}, cinema_phone = #{cinemaPhone},

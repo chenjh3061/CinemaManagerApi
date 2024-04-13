@@ -2,17 +2,17 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.cm.mapper.SysBillMapper">
+<mapper namespace="com.cinema.cm.mapper.SysBillMapper">
 
-    <resultMap id="BillMap" type="com.rabbiter.cm.domain.SysBill">
+    <resultMap id="BillMap" type="com.cinema.cm.domain.SysBill">
         <id property="billId" column="bill_id"></id>
         <result property="userId" column="user_id"></result>
         <result property="sessionId" column="session_id"></result>
-        <association property="sysSession" column="session_id" select="com.rabbiter.cm.mapper.SysSessionMapper.findSessionById"></association>
-        <association property="sysUser" column="user_id" select="com.rabbiter.cm.mapper.SysUserMapper.findUserById"></association>
+        <association property="sysSession" column="session_id" select="com.cinema.cm.mapper.SysSessionMapper.findSessionById"></association>
+        <association property="sysUser" column="user_id" select="com.cinema.cm.mapper.SysUserMapper.findUserById"></association>
     </resultMap>
 
-    <select id="findAllBills" parameterType="com.rabbiter.cm.domain.SysBill" resultMap="BillMap">
+    <select id="findAllBills" parameterType="com.cinema.cm.domain.SysBill" resultMap="BillMap">
         select * from sys_bill
         <where>
             <if test="payState != null"> and pay_state = #{payState} </if>
@@ -37,7 +37,7 @@
         select * from sys_bill where sysdate() >= deadline and cancel_state = 0 and pay_state = 0
     </select>
 
-    <update id="addBill" parameterType="com.rabbiter.cm.domain.SysBill">
+    <update id="addBill" parameterType="com.cinema.cm.domain.SysBill">
         <!-- 将添加后的主键id传回原对象 -->
         <selectKey keyProperty="billId" keyColumn="bill_id" resultType="long" order="AFTER">
             select last_insert_id();
@@ -59,7 +59,7 @@
         )
     </update>
 
-    <update id="updateBill" parameterType="com.rabbiter.cm.domain.SysBill">
+    <update id="updateBill" parameterType="com.cinema.cm.domain.SysBill">
         update sys_bill set
         <if test="payState != null">pay_state = #{payState}, </if>
         <if test="cancelState != null">cancel_state = #{cancelState}, </if>
@@ -68,6 +68,7 @@
         <if test="cancelTime != null ">cancel_time = #{cancelTime}, </if>
         <if test="payment != null ">payment = #{payment}, </if>
         <if test="billMoney != null ">bill_money = #{billMoney}, </if>
+        <if test="discount != null ">discount = #{discount}, </if>
         create_time = sysdate()
         where bill_id = #{billId}
     </update>

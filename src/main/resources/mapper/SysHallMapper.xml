@@ -2,15 +2,15 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.rabbiter.cm.mapper.SysHallMapper">
+<mapper namespace="com.cinema.cm.mapper.SysHallMapper">
 
-    <resultMap id="sysHallMap" type="com.rabbiter.cm.domain.SysHall">
+    <resultMap id="sysHallMap" type="com.cinema.cm.domain.SysHall">
         <result property="hallId" column="hall_id"></result>
         <result property="cinemaId" column="cinema_id"></result>
-        <association property="sysCinema" column="cinema_id" select="com.rabbiter.cm.mapper.SysCinemaMapper.findCinema"></association>
+        <association property="sysCinema" column="cinema_id" select="com.cinema.cm.mapper.SysCinemaMapper.findCinema"></association>
     </resultMap>
 
-    <select id="findAllHalls" resultMap="sysHallMap" parameterType="com.rabbiter.cm.domain.SysHall">
+    <select id="findAllHalls" resultMap="sysHallMap" parameterType="com.cinema.cm.domain.SysHall">
         select * from sys_hall
         <where>
             del_state = 0
@@ -23,11 +23,11 @@
         </where>
     </select>
 
-    <select id="findHallById" parameterType="com.rabbiter.cm.domain.SysHall" resultMap="sysHallMap">
+    <select id="findHallById" parameterType="com.cinema.cm.domain.SysHall" resultMap="sysHallMap">
         select * from sys_hall where hall_id = #{hallId}
     </select>
 
-    <update id="addHall" parameterType="com.rabbiter.cm.domain.SysHall">
+    <update id="addHall" parameterType="com.cinema.cm.domain.SysHall">
         insert into sys_hall
         (hall_name, hall_category, row_start, row_nums, seat_nums_row, seat_nums, seat_state, hall_equip)
         values
@@ -35,7 +35,7 @@
                 #{rowStart}, #{rowNums}, #{seatNumsRow}, #{seatNums}, #{seatState}, #{hallEquip})
     </update>
 
-    <update id="updateHall" parameterType="com.rabbiter.cm.domain.SysHall">
+    <update id="updateHall" parameterType="com.cinema.cm.domain.SysHall">
         update sys_hall set
         hall_name = #{hallName},
         hall_category = #{hallCategory},
@@ -48,7 +48,7 @@
         where hall_id = #{hallId}
     </update>
 
-    <update id="deleteHall" parameterType="com.rabbiter.cm.domain.SysHall">
+    <update id="deleteHall" parameterType="com.cinema.cm.domain.SysHall">
         update sys_hall set del_state = 1 where hall_id  = #{hallId}
     </update>
 

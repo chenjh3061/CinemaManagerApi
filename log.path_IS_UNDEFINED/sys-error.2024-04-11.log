@@ -1,0 +1,2 @@
+09:20:13.369 [http-nio-9231-exec-4] ERROR c.c.c.s.r.CustomerRealm - [doGetAuthenticationInfo,57] - token无效(空''或者null都不行!)
+09:20:13.376 [http-nio-9231-exec-4] ERROR c.c.c.s.JwtFilter - [isAccessAllowed,48] - JwtFilter过滤验证失败
